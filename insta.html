@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="post">
+        <div class="header">
+            <img src="pfp.png" alt="Profile Pic" class="profile-pic">
+            <span class="username">techno_stan</span>
+            <span class="options" onclick="alert('Options menu would open here')">⋯</span>
+        </div>
+        <img src="baby-rottweiler-v0-u04e7ecjarvc1.webp" alt="Post Image" class="image">
+        <div class="footer">
+            <div class="actions">
+                <div class="left-actions">
+                    <span class="action-btn" id="like-btn">
+                        <img id="like-img" src="heart.png" alt="Like" class="icon">
+                    </span>
+                    <span class="action-btn" id="comment-btn">
+                        <img src="comment.png" alt="Comment" class="icon">
+                    </span>
+                    <span class="action-btn" id="share-btn">
+                        <img src="share.png" alt="Share" class="icon">
+                    </span>
+                </div>
+                <span class="bookmark-btn" id="bookmark-btn">
+                    <img id="bookmark-img" src="pin.png" alt="Bookmark" class="icon">
+                </span>
+            </div>
+            <div class="likes" id="likes-count">1,234 likes</div>
+            <div class="caption"><strong>example_user</strong> Meet Boris a new addition to the family! #hashtag #viral #puppy <a href="#" style="color: #0095f6;">@Dogloverrr</a></div>
+            <div class="view-comments" id="view-comments">View all 3 comments</div>
+            <div class="comments" id="comments-section">
+                <div class="comment"><strong>user1</strong> Great post!</div>
+                <div class="comment"><strong>user2</strong> Love this 😍</div>
+                <div class="comment"><strong>user3</strong> So cuteee!</div>
+            </div>
+            <div class="timestamp">2 hours ago</div>
+            <div class="add-comment">
+                <input type="text" id="comment-input" placeholder="Add a comment...">
+                <button id="post-comment" disabled>Post</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="insta.js"></script>
+</body>
+</html>
